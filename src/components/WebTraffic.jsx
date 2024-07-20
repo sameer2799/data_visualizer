@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import CardFilter from './CardFilter';
 import WebTrafficChart from "./WebTrafficChart";
 
@@ -8,19 +8,6 @@ function WebTraffic() {
     const handleFilterChange = filter => {
         setFilter(filter);
     };
-
-    const fetchData = () => {
-        fetch('http://localhost:4000/recentactivity')
-        .then(res => res.json())
-        .then(data => {
-            setItems(data);
-        })
-        .catch(e => console.log(e.message));
-    };
-
-    useEffect(() => {
-        fetchData();
-    }, []);
 
     
     return (

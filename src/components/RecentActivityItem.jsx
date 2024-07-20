@@ -1,21 +1,21 @@
-function RecentActivityItem({item}) {
+function RecentActivityItem({time, color, content, highlight}) {
 
     return (
         <div className="activity-item d-flex">
-            <div className="activity-label">{item.time}</div>
-            <i className={`bi bi-circle-fill activity-badge ${item.color} align-self-start`}></i>
+            <div className="activity-label">{time}</div>
+            <i className={`bi bi-circle-fill activity-badge ${color} align-self-start`}></i>
             {
-                item.highlight === '' ? (
-                    <div className="activity-content">{item.content}</div>
+                highlight === '' ? (
+                    <div className="activity-content">{content}</div>
                 ) : (
                     <div className="activity-content">
-                        {item.content.substring(0, item.content.indexOf(item.highlight))}
+                        {content.substring(0, content.indexOf(highlight))}
                         <a href="/" className="fw-bold text-dark">
-                            {item.highlight}
+                            {highlight}
                         </a>
                         {
-                            item.content.slice(
-                                item.content.indexOf(item.highlight) + item.highlight.length,
+                            content.slice(
+                                content.indexOf(highlight) + highlight.length,
                                 -1
                             )
                         }

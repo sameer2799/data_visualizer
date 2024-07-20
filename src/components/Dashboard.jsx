@@ -14,7 +14,7 @@ function Dashboard() {
 
     const fetchData = () => {
         try {
-            fetch('https://fantastic-yodel-49rw556j47w255ww-4000.app.github.dev/cards', {mode: "no-cors"})
+            fetch('http://localhost:4000/cards')
             .then(res => res.json())
             .then(data => {
                 setCards(data);
@@ -24,8 +24,7 @@ function Dashboard() {
         } catch (error) {
             console.log(error.message);
         }
-        
-    };
+            };
 
     useEffect(() => {
         fetchData();

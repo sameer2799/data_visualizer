@@ -35,7 +35,7 @@ function RecentActivity() {
                     {
                         items && items.length > 0 &&
                         items.map(item => (
-                            <RecentActivityItem key={item._id} items={items} />
+                            <RecentActivityItem key={item._id} time={item.time} color={item.color} content={item.content} highlight={item.highlight} />
                         ))
                     }
                 </div>

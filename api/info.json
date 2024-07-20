@@ -28,21 +28,21 @@
   "news": [
     {
       "_id": 1,
-      "img": "../public/news-1.jpg",
+      "img": "data/images/news-1.jpg",
       "title": "Nihil blanditiis at in nihil autem",
       "subtitle": "Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut harum",
       "category": "abc"
     },
     {
       "_id": 2,
-      "img": "../public/news-2.jpg",
+      "img": "../../public/news-2.jpg",
       "title": "Quidem autem et impedit",
       "subtitle": "Illo nemo neque maiores vitae officiis cum eum turos elan dries werona nande",
       "category": "abc"
     },
     {
       "_id": 3,
-      "img": "../public/news-3.jpg",
+      "img": "../../public/news-3.jpg",
       "title": "Id quia et et ut maxime similique occaecati ut",
       "subtitle": "Fugiat voluptas vero eaque accusantium eos. Consequuntur sed ipsam et totam",
       "category": "abc"
@@ -141,7 +141,7 @@
       "status": "Approved"
     }
   ],
-  "recentactiviy": [
+  "recentactivity": [
     {
       "_id": 1,
       "time": "32 min",

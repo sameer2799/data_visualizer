@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './css/news.css';
 import NewsPostItem from "./NewsPostItem";
+import CardFilter from "./CardFilter";
 
 function News() {
     const [news, setNews] = useState([]);

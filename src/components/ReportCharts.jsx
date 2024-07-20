@@ -6,15 +6,15 @@ function ReportCharts() {
         series: [
             {
                 name: 'Sales',
-                data: [36,40, 28, 51,42, 82, 56],
+                data: [36,40, 28, 51, 42, 82, 56],
             },
             {
                 name: 'Revenue',
-                data: [36,40, 28, 51,42, 82, 56],
+                data: [16, 22, 30, 35, 52, 64, 76],
             },
             {
                 name: 'Customers',
-                data: [36,40, 28, 51,42, 82, 56],
+                data: [26, 34, 40, 45, 32, 76, 60],
             },
         ],
         options: {
@@ -28,7 +28,7 @@ function ReportCharts() {
             markers: {
                 size: 4,
             },
-            colors: ['#4154f1', '2eca6a', '#ff771d'],
+            colors: ['#4154f1', '#2eca6a', '#ff771d'],
             fill: {
                 type: 'gradient',
                 gradient: {
